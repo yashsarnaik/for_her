@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yes!</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="tenor-gif-embed" data-postid="10555336176164685411" data-share-method="host" data-aspect-ratio="1.02759" data-width="100%">
+            <a href="https://tenor.com/view/cat-cute-gif-10555336176164685411">Cat Cute GIF</a>from <a href="https://tenor.com/search/cat+cute-gifs">Cat Cute GIFs</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <h1>Hehehe I knew you will 😘</h1>
+    </div>
+
+    <script>
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.style.top = Math.floor(Math.random() * 100) + "%";
+            heart.style.left = Math.floor(Math.random() * 100) + "%";
+            document.body.appendChild(heart);
+            setTimeout(() => {
+                heart.remove();
+            }, 4000);
+        }
+
+        for (let i = 0; i < 20; i++) {
+            createHeart();
+        }
+    </script>
+</body>
+
+</html>
